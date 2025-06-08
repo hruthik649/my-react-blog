@@ -23,7 +23,7 @@ const Layout = () => {
 function App() {
   return (
     // BrowserRouter enables client-side routing, with basename for GitHub Pages
-    <BrowserRouter basename="/my-react-blog/"> {/* <--- THIS IS THE CRUCIAL CHANGE */}
+   <BrowserRouter>
       {/* Routes defines the different paths in your application */}
       <Routes>
         {/* The base route, which uses our Layout component */}
