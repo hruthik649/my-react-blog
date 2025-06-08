@@ -1,22 +1,19 @@
-// src/App.jsx
 import React from 'react';
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom'; // Import BrowserRouter, Routes, Route, Outlet
-import Header from './components/Header'; // Import your Header component
-import Footer from './components/Footer'; // Import your Footer component
-import Home from './components/Home';     // Import your Home component
-import About from './components/About';   // Import your About component
-import Contact from './components/Contact'; // Import your Contact component
-import NotFound from './components/NotFound'; // Import your NotFound component
-import './App.css'; // Your global styles
+import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import NotFound from './components/NotFound';
+import './App.css';
 
-// This component will contain your Header and Footer,
-// and an <Outlet /> where the specific page content (Home, About, Contact) will render.
 const Layout = () => {
   return (
     <>
       <Header />
       <main>
-        <Outlet /> {/* This is where the content for the current route will be displayed */}
+        <Outlet />
       </main>
       <Footer />
     </>
@@ -25,8 +22,8 @@ const Layout = () => {
 
 function App() {
   return (
-    // BrowserRouter enables client-side routing
-    <BrowserRouter>
+    // BrowserRouter enables client-side routing, with basename for GitHub Pages
+    <BrowserRouter basename="/my-react-blog/"> {/* <--- THIS IS THE CRUCIAL CHANGE */}
       {/* Routes defines the different paths in your application */}
       <Routes>
         {/* The base route, which uses our Layout component */}
