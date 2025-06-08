@@ -1,0 +1,312 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6; /* Improve readability */
+}
+
+#root { /* The main container where React app is mounted */
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Basic header styles (will be applied when Header component is added) */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px 8px 0 0; /* Top rounded corners */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Basic navigation styles (will be applied when Header component is added) */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #444;
+    padding: 0.8rem;
+    border-radius: 0 0 8px 8px; /* Bottom rounded corners */
+    margin-bottom: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+nav ul li a:hover {
+    color: #a7a7a7;
+}
+/* src/App.css - Add these at the very end of your file */
+
+/* Styles for the main content area */
+main {
+  padding: 20px;
+}
+
+/* General section styling */
+section {
+  background-color: #fcfcfc;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+/* Styling for individual blog posts */
+.blog-post {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.blog-post h3 {
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+.blog-post small {
+  display: block;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  font-size: 0.85em;
+}
+
+/* About page image styling */
+.about-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: calc(100% - 22px); /* Account for padding + border */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-section button {
+  background-color: #28a745; /* Green button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #218838;
+}
+
+/* Messages for loading, error, and 404 page */
+.loading-message, .error-message, .not-found {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.error-message {
+    color: #dc3545; /* Red for errors */
+}
+
+.not-found a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.not-found a:hover {
+    background-color: #0056b3;
+}
+/* src/App.css - Add these at the very end of your file */
+
+/* Styles for the main content area */
+main {
+  padding: 20px;
+}
+
+/* General section styling */
+section {
+  background-color: #fcfcfc;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+/* Styling for individual blog posts */
+.blog-post {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.blog-post h3 {
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+.blog-post small {
+  display: block;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+  font-size: 0.85em;
+}
+
+/* About page image styling */
+.about-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: calc(100% - 22px); /* Account for padding + border */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-section button {
+  background-color: #28a745; /* Green button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+  background-color: #218838;
+}
+
+/* Messages for loading, error, and 404 page */
+.loading-message, .error-message, .not-found {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.error-message {
+    color: #dc3545; /* Red for errors */
+}
+
+.not-found a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.not-found a:hover {
+    background-color: #0056b3;
+}
